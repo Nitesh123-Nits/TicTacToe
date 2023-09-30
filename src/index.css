@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(3, 3, 49);
+  color: aliceblue;
+  display: grid;
+  place-content: center;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.modal {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .4s ease-in-out;
+  place-content: center;
+  background-color: rgba(8, 4, 30);
+  color: aliceblue;
+}
+
+.modal .para {
+  font-size: 4rem;
+  color: antiquewhite;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 3rem;
+  font-weight: bolder;
+  /* animation: pop 1s ease-in-out infinite; */
+}
+
+
+
+.modal button,
+.btn {
+  border: 2px solid pink;
+  background-color: rgb(53, 2, 75);
+  padding: 1rem;
+  font-size: 2rem;
+  transition: .3s;
+  color: azure;
+  margin: 1rem;
+  font-weight: bolder;
+}
+
+:is(button, .btn):hover {
+  color: rgb(31, 220, 31);
+  font-size: 2.5rem;
+  background-color: rgba(8, 4, 30);
+  box-shadow: 8px 8px rgb(209, 191, 228);
+}
+
+
+/* @keyframes pop {
+  from {
+    font-size: 1rem;
+  }
+
+  to {
+    font-size: 4rem;
+  }
+
+
+} */
+
+
+.square h5 {
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.board-container h4 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+
+}
